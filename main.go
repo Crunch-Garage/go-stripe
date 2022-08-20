@@ -40,14 +40,23 @@ func main() {
 	// 	Description: "Test Customer",
 	// }
 
-	/*get payment intent params from api request*/
-	paymentIntentParams := &models.StripePaymentIntent{
-		Amount:             1000,
-		PaymentMethodTypes: "card",
+	/*get card details from api request*/
+	cardParams := &models.StripeCard{
+		Number:   "4242424242424242",
+		ExpMonth: "8",
+		ExpYear:  "2023",
+		CVC:      "314",
 	}
-
-	c, _ := stripefunctions.CreateStripePayIntent(paymentIntentParams)
+	c, _ := stripefunctions.CreatePaymentMethod("cus_MH4aPLRtAMUd6o", cardParams)
 	fmt.Println(c)
+
+	/*get payment intent params from api request*/
+	// paymentIntentParams := &models.StripePaymentIntent{
+	// 	Amount:             1000,
+	// 	PaymentMethodTypes: "card",
+	// }
+	// c, _ := stripefunctions.CreateStripePayIntent(paymentIntentParams)
+	// fmt.Println(c)
 
 	// c, _ := stripefunctions.CreateStripeCharge(customerParams, chargeParams)
 	// fmt.Println(c)

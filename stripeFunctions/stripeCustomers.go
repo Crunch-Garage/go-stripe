@@ -18,10 +18,8 @@ func CreateStripeCustomer(customerParams *models.StripeCustomer) (*stripe.Custom
 	}
 
 	newCustomer, err := customer.New(params)
-
 	/*create payment method*/
-
-	/*attach payment method to customer*/
+	// createPaymethod,createPaymethodErr  := CreatePaymentMethod("cus_MH4aPLRtAMUd6o", cardParams)
 
 	if err != nil {
 		return nil, err
