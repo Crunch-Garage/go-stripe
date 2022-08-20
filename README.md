@@ -10,8 +10,11 @@ target="_blank"><img src="https://img.shields.io/badge/Go-1.19+-00ADD8?style=for
 target="_blank"><img src="https://img.shields.io/badge/Stripe%20Go-v72-red?style=for-the-badge&logo=stripe&logoColor=green" alt="stripe-go version" />
  </p>
 
+ <br />
+
 # 🧐 Getting Started 
 > Before Getting Started, Let us learn how to install golang and investigate what Stripe is.
+>
 > As [Edwin Kimani](https://github.com/edugeezu) asks, What is ?, Why ? Golang or Stripe ? Well let's learn why Golang ot Stripe
 
 Clone the repository:
