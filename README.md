@@ -64,3 +64,60 @@ Request Body:
 }
 
 ```
+
+Response Body:
+```
+{
+  "address": {
+    "city": "",
+    "country": "",
+    "line1": "",
+    "line2": "",
+    "postal_code": "",
+    "state": ""
+  },
+  "balance": 0,
+  "created": 1661086328,
+  "currency": "",
+  "default_source": null,
+  "deleted": false,
+  "delinquent": false,
+  "description": "Jane Doe",
+  "discount": null,
+  "email": "janedoe@example.com",
+  "id": "cus_MHnDA03YgPP9uS",
+  "invoice_prefix": "807DC757",
+  "invoice_settings": {
+    "custom_fields": null,
+    "default_payment_method": null,
+    "footer": ""
+  },
+  "livemode": false,
+  "metadata": {},
+  "name": "Jane Doe",
+  "next_invoice_sequence": 1,
+  "phone": "+254712345678",
+  "preferred_locales": [],
+  "shipping": null,
+  "sources": {
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_MHnDA03YgPP9uS/sources",
+    "data": []
+  },
+  "subscriptions": {
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_MHnDA03YgPP9uS/subscriptions",
+    "data": []
+  },
+  "tax_exempt": "none",
+  "tax_ids": {
+    "has_more": false,
+    "total_count": 0,
+    "url": "/v1/customers/cus_MHnDA03YgPP9uS/tax_ids",
+    "data": []
+  }
+}
+
+```
