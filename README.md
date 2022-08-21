@@ -391,3 +391,33 @@ Response Body:
   "sepa_debit": null,
   "type": "card"
 }
+
+```
+## ✍️ Contributing
+
+Interested in contributing to the Go-Stripe project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
+
+## 🌟 Spread the word!
+
+If you want to say thank you and/or support active development of the Go-Stripe:
+
+- Add a GitHub Star to the project!
+- Check out our website [Crunch Garage](https://crunchgarage.com/) and [GitHub](https://github.com/Crunch-Garage)
+ 
+
+Thanks so much for your interest in growing the reach of the Go-Stripe project!
+
+_**PS:** consider sharing and following our organization ([Crunch Garage](https://github.com/Crunch-Garage)) to continue the development of this project on [Go-Stripe]https://github.com/Crunch-Garage/go-stripe) :)_
+
+## ⚠️ License
+
+The Go-Stripe is free and open-source software licensed under the GNU General Public License v3.0. All designs were created by [Crunch Garage](https://github.com/Crunch-Garage) and distributed under [MIT](./LICENSE).
+
+
+## 🥷 Author
+
+Cosmas Mbuvi | [Crunch Garage Homepage](https://crunchgarage.com)
+
+## 🍾 Cheers!
+
+Reminder that *you are great, you are enough, and your presence is valued.* If you are struggling with your mental health, please reach out to someone you love and consult a professional. [There are many resources for you to get help in a time of need.](https://www.nimh.nih.gov/health/find-help)
