@@ -12,7 +12,7 @@ target="_blank"><img src="https://img.shields.io/badge/Stripe%20-Stripe Go-red?s
 
  <br />
 
-# 🧐 Getting Started 
+## 🧐 Getting Started 
 > Before getting started , let us learn how to install [Golang](https://go.dev/) and investigate what [Stripe](https://stripe.com/docs) is.
 >
 > As [Edwin Kimani](https://github.com/edugeezu) asks, What is ?, Why ? Golang or Stripe ? Well let's learn why Golang or Stripe
@@ -34,7 +34,7 @@ $ go mod tidy
 
 ## 📒 Stripe Authentication
 
-Before cloning and running the repo, you need to get your stripe Api key. The Stripe Api uses [API keys](https://stripe.com/docs/keys) to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard.](https://stripe.com/login?redirect=/account/apikeys) 
+Before running the project, you need to get your stripe Api key. The Stripe Api uses [API keys](https://stripe.com/docs/keys) to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard.](https://stripe.com/login?redirect=/account/apikeys) 
 
 Global API key example:
 ```
@@ -44,4 +44,23 @@ stripe.Key = "sk_test_51LYSmlLmC3rksDIqGzKxI4eqASwBZi4vZnKzwXIUtNXI0NGtBV2tWSync
 Run project:
 ```
 $ go run main.go
+```
+
+## 👨‍💻 API requests
+
+Create Customer API example:
+```
+http://localhost:8080/api/customer/create
+```
+Method POST
+
+Request Body:
+```
+{
+  "name" : "Jane Doe",
+  "phone": "+254712345678",
+  "email": "janedoe@example.com",
+  "description":"Jane Doe"
+}
+
 ```
