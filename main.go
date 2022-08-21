@@ -1,30 +1,22 @@
 package main
 
 import (
-	"Crunch-Garage/go-stripe/config"
-	"Crunch-Garage/go-stripe/models"
-	stripefunctions "Crunch-Garage/go-stripe/stripeFunctions"
-	"fmt"
+	"Crunch-Garage/go-stripe/connections"
+	"Crunch-Garage/go-stripe/routes"
+	"log"
+	"net/http"
+	"time"
 
-	"github.com/stripe/stripe-go"
+	"github.com/gorilla/mux"
 )
 
 func main() {
-	//cus_MH2pXcoeax4Tcl
 
-	/*GLOBALY SET API KEY*/
-	/*initialize stripe client globally if using one stripe account*/
-	stripe.Key = config.EnvStripeApiKey()
-	//c, _ := customer.Get("cus_4eC39HqLyjvKYx", nil)
+	/*initiate stripe*/
+	connections.GlobalStripeConnection()
 
-	/*SET API KEY PER REQUEST*/
-	/* 1- if using multiple stripe accounts say one in USA and another in Europe
-	   2- set an api key each time when making a new api per  request
-	   3- if building a platform for multiple vendors i.e UBER, LYFT   pass the api key in requests
-	*/
-	//sc := &client.API{}
-	//sc.Init(config.EnvStripeApiKey(), nil)
-	//c, _ := sc.Customers.Get("cus_MH2lQHxvjab6TA", nil)
+	/*Listen and serve incoming requests*/
+	HandleApiRequests()
 
 	/*get charge params from api request*/
 	// chargeParams := &models.StripeCharge{
@@ -41,20 +33,20 @@ func main() {
 	// }
 
 	/*get card details from api request*/
-	cardParams := &models.StripeCard{
-		Number:   "4242424242424242",
-		ExpMonth: "8",
-		ExpYear:  "2023",
-		CVC:      "314",
-	}
-	c, _ := stripefunctions.CreatePaymentMethod("cus_MH4aPLRtAMUd6o", cardParams)
-	fmt.Println(c)
+	// cardParams := &models.StripeCard{
+	// 	Number:   "4242424242424242",
+	// 	ExpMonth: "8",
+	// 	ExpYear:  "2023",
+	// 	CVC:      "314",
+	// }
+	// c, _ := stripefunctions.CreatePaymentMethod("cus_MH4aPLRtAMUd6o", cardParams)
+	// fmt.Println(c)
 
 	/*get payment intent params from api request*/
 	// paymentIntentParams := &models.StripePaymentIntent{
 	// 	Amount:             1000,
 	// 	PaymentMethodTypes: "card",
-	// }
+
 	// c, _ := stripefunctions.CreateStripePayIntent(paymentIntentParams)
 	// fmt.Println(c)
 
@@ -68,5 +60,25 @@ func main() {
 	/*Get Stripe Customer*/
 	//c := GetStripeCutomer("cus_MH33H53kzlxe4y")
 	//fmt.Println(c)
+
+}
+
+/*Handle Api Requests*/
+func HandleApiRequests() {
+
+	router := mux.NewRouter()
+
+	routes.PaymentRouter(router)
+
+	srv := &http.Server{
+		Addr: ":8080", // "127.0.0.1:8000"  "0.0.0.0:8000"
+		/*Good practice to set timeouts to avoid Slowloris attacks.*/
+		WriteTimeout: time.Second * 15,
+		ReadTimeout:  time.Second * 15,
+		IdleTimeout:  time.Second * 60,
+		Handler:      router, // Pass our instance of gorilla/mux in.
+	}
+
+	log.Fatal(srv.ListenAndServe()) //log.Fatal(http.ListenAndServe(":8080", router))
 
 }
