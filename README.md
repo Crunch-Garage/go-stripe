@@ -32,6 +32,15 @@ Install the project dependancies:
 $ go mod tidy
 ```
 
+## 📒 Stripe Authentication
+
+Before cloning and running the repo, you need to get your stripe Api key. The Stripe Api uses [API keys](https://stripe.com/docs/keys) to authenticate requests. You can view and manage your API keys in [the Stripe Dashboard.](https://stripe.com/login?redirect=/account/apikeys) 
+
+Global API key example:
+```
+stripe.Key = "sk_test_51LYSmlLmC3rksDIqGzKxI4eqASwBZi4vZnKzwXIUtNXI0NGtBV2tWSyncdTlDZzdyaaaIBpIuAq64WZae9z6RvAA001TmltJWT"
+```
+
 Run project:
 ```
 $ go run main.go
