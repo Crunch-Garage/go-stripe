@@ -395,23 +395,23 @@ Response Body:
 ```
 ## ✍️ Contributing
 
-Interested in contributing to the Go-Stripe project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
+Interested in contributing to the Go-Stripe Payment project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
 
 ## 🌟 Spread the word!
 
-If you want to say thank you and/or support active development of the Go-Stripe:
+If you want to say thank you and/or support active development of the Go-Stripe Payment Project:
 
 - Add a GitHub Star to the project!
 - Check out our website [Crunch Garage](https://crunchgarage.com/) and [GitHub](https://github.com/Crunch-Garage)
  
 
-Thanks so much for your interest in growing the reach of the Go-Stripe project!
+Thanks so much for your interest in growing the reach of the Go-Stripe Payment project!
 
-_**PS:** consider sharing and following our organization ([Crunch Garage](https://github.com/Crunch-Garage)) to continue the development of this project on [Go-Stripe]https://github.com/Crunch-Garage/go-stripe) :)_
+_**PS:** consider sharing and following our organization ([Crunch Garage](https://github.com/Crunch-Garage)) to continue the development of this project on [Go-Stripe](https://github.com/Crunch-Garage/go-stripe) :)_
 
 ## ⚠️ License
 
-The Go-Stripe is free and open-source software licensed under the GNU General Public License v3.0. All designs were created by [Crunch Garage](https://github.com/Crunch-Garage) and distributed under [MIT](./LICENSE).
+The Go-Stripe Payment is free and open-source software licensed under the GNU General Public License v3.0. All designs were created by [Crunch Garage](https://github.com/Crunch-Garage) and distributed under [MIT](./LICENSE).
 
 
 ## 🥷 Author
