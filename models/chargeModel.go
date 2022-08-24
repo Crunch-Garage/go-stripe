@@ -7,6 +7,3 @@ type StripeCharge struct {
 	Customer     string `json:"customer"`
 	Token        string `json:"chargeToken"`
 }
-
-type StripeChargeJson struct {
-}

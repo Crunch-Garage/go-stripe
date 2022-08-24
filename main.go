@@ -17,7 +17,6 @@ func main() {
 
 	/*Listen and serve incoming requests*/
 	HandleApiRequests()
-
 }
 
 /*Handle Api Requests*/
@@ -39,7 +38,6 @@ func HandleApiRequests() {
 	}
 
 	log.Fatal(srv.ListenAndServe()) //log.Fatal(http.ListenAndServe(":8080", router))
-
 }
 
 /*get charge params from api request*/

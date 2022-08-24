@@ -24,7 +24,6 @@ func CreateStripeCustomer(customerParams *models.StripeCustomer) (*stripe.Custom
 	}
 
 	return newCustomer, err
-
 }
 
 /*GET STRIPE CUSTOMER*/

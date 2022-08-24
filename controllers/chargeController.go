@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+/*create stripe charege controller*/
 func CreateCharge(w http.ResponseWriter, r *http.Request) {
 	var charge models.StripeCharge
 

@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+/*create payment method*/
 func CreatePaymentMethod(w http.ResponseWriter, r *http.Request) {
 	var paymentMethod models.StripeCard
 
@@ -57,5 +58,4 @@ func CreatePaymentMethod(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(pm)
-
 }
