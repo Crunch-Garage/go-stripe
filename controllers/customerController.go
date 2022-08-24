@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+/*create stripe customer*/
 func CreateStripeCustomer(w http.ResponseWriter, r *http.Request) {
 	var customer models.StripeCustomer
 
@@ -23,5 +24,4 @@ func CreateStripeCustomer(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(newCustomer)
-
 }

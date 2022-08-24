@@ -10,7 +10,7 @@ target="_blank"><img src="https://img.shields.io/badge/Go-1.19+-00ADD8?style=for
 target="_blank"><img src="https://img.shields.io/badge/Stripe%20-Stripe Go-red?style=for-the-badge&logo=stripe&logoColor=green" alt="stripe-go version" />
  </p>
 
- <br />
+<br/>
 
 ## 🧐 Getting Started 
 > Before getting started , let us learn how to install [Golang](https://go.dev/) and investigate what [Stripe](https://stripe.com/docs) is.
@@ -393,6 +393,7 @@ Response Body:
 }
 
 ```
+
 ## ✍️ Contributing
 
 Interested in contributing to the Go-Stripe Payment project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
@@ -412,7 +413,6 @@ _**PS:** consider sharing and following our organization ([Crunch Garage](https:
 ## ⚠️ License
 
 The Go-Stripe Payment is free and open-source software licensed under the GNU General Public License v3.0. All designs were created by [Crunch Garage](https://github.com/Crunch-Garage) and distributed under [MIT](./LICENSE).
-
 
 ## 🥷 Author
 

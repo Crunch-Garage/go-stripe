@@ -20,5 +20,4 @@ func GlobalStripeConnection() {
 	//sc := &client.API{}
 	//sc.Init(config.EnvStripeApiKey(), nil)
 	//c, _ := sc.Customers.Get("cus_MH2lQHxvjab6TA", nil)
-
 }
